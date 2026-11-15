@@ -1,5 +1,6 @@
 const i18n = {
   en: {
+    'nav-back': 'Back',
     'nav-projects': 'Projects', 'nav-skills': 'Skills', 'nav-about': 'About', 'nav-contact': 'Contact',
     'hero-badge': 'Available for projects',
     'tag1': 'Web Dev', 'tag2': 'UI Designer', 'tag3': 'Fullstack Builder',
@@ -31,6 +32,7 @@ const i18n = {
     'footer-craft': 'Crafted with intention'
   },
   de: {
+    'nav-back': 'Zurück',
     'nav-projects': 'Projekte', 'nav-skills': 'Skills', 'nav-about': 'Über mich', 'nav-contact': 'Kontakt',
     'hero-badge': 'Offen für neue Projekte',
     'tag1': 'Web Dev', 'tag2': 'UI Designer', 'tag3': 'Zukunftsbilder',

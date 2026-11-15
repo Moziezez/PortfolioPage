@@ -16,6 +16,7 @@
     --glow: rgba(123,104,238,0.3);
     --glow2: rgba(0,212,184,0.2);
     --nav-bg: rgba(6,8,16,0.85);
+    --back: rgb(238, 186, 104); /* Gold-Schimmer hinter "Apps" im Hero */
   }
   [data-theme="light"] {
     --bg: #f5f4f0;
@@ -34,6 +35,7 @@
     --glow: rgba(91,71,214,0.2);
     --glow2: rgba(0,168,150,0.15);
     --nav-bg: rgba(245,244,240,0.88);
+    --back: #b07a1f; /* dunkleres Gold, lesbar auf hellem Grund */
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -81,6 +83,8 @@
     transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--accent2); }
+  .nav-links .nav-back a { color: var(--back); }
+  .nav-links .nav-back a:hover { color: var(--back); opacity: 0.75; }
   .nav-controls { display: flex; align-items: center; gap: 0.75rem; }
   .toggle-btn {
     background: var(--surface);
@@ -566,7 +570,7 @@
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     nav { padding: 0.9rem 1.25rem; }
-    .nav-links { display: none; }
+    .nav-links li:not(.nav-back) { display: none; } /* "Zurück" bleibt auch mobil sichtbar */
     section { padding: 5rem 1.25rem; }
     .skills-layout, .about-layout { grid-template-columns: 1fr; gap: 2rem; }
     .about-avatar-wrap { max-width: 200px; margin: 0 auto; }
