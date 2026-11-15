@@ -25,9 +25,9 @@
     --surface-hover: rgba(0,0,0,0.07);
     --border: rgba(0,0,0,0.08);
     --border-strong: rgba(0,0,0,0.15);
-    --text: #9673c0e0; /* #0f0e1a;  */
+    --text: #52218c; /* #0f0e1a;  */
     --text-muted: rgba(20,15,50,0.5);
-    --text-dim: rgba(20,15,50,0.3);
+    --text-dim: rgba(20, 15, 50, 0.62);
     --accent: #5b47d6;
     --accent2: #00a896;
     --accent3: #7c56e8;

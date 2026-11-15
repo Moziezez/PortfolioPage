@@ -64,7 +64,7 @@ const i18n = {
 };
 
 // State from localStorage
-let lang = localStorage.getItem('mv-lang') || 'en';
+let lang = localStorage.getItem('mv-lang') || 'de';
 let theme = localStorage.getItem('mv-theme') || 'dark';
 
 function applyLang(l) {
